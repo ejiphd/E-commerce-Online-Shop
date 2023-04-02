@@ -1,0 +1,482 @@
+/* navigation */
+.navbar{
+    background-color: rgba(4, 164, 228, 0.589);
+}
+.navbar-brand{
+    font-family: cooper;
+}
+#logo{
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+}
+.searchBtn{
+    background-image:linear-gradient(to bottom right, rgba(6, 206, 146, 0.432),rgba(7, 164, 192, 0.411)) ;
+}
+.fa-search{
+    color:white;
+}
+.nav-link{
+    
+    font-family: verdana;
+}
+#offcanvasCart{
+    margin-top:75px;
+    padding: 20px;
+}
+
+/* end of navigation */
+
+/* Content */
+.mainContent{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:20px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 30px;
+}
+.grids{
+    box-shadow: 0 0 3px black;
+    border-radius:10px;
+    height: 480px;
+    width: 300px;
+}
+.grids1{
+    box-shadow: 0 0 3px black;
+    border-radius:10px;
+    height: 400px;
+}
+.titleBanner{
+    border-radius:10px;
+    width: 80%;
+    height: 200px;
+}
+.images{
+    width: 100%;
+    border-radius: 10px;
+}
+.shoesNames{
+    font-family: Franklin Gothic;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 8px;
+}
+.ratings{
+    color:rgb(6, 206, 146);
+}
+.addCart{
+    background-image:linear-gradient(to bottom right, rgb(6, 206, 146),rgb(5, 151, 177)) ;
+    border-radius:5px;
+    border:none;
+    height: 30px;
+    color: white;
+}
+.addCart:hover{
+    box-shadow: 0 0 5px black;
+}
+.addCart:active{
+    transform: scale(0.8);
+}
+/* cart */
+.placeOrder{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 450px;
+}
+#checkOutBtn{
+    color: white;
+    background-image:linear-gradient(to bottom right, rgb(6, 206, 146),rgb(5, 151, 177)) ;
+    border-radius:5px;
+    border:none;
+    height: 35px;
+    margin-left: 50px;
+}
+#checkOutBtn:hover{
+    box-shadow: 0 0 5px black;
+}
+#checkOutBtn:active{
+    transform:scale(0.8);
+}
+
+/* footer */
+.footerImage{
+    width: 100%;
+    height: 100%;
+}
+.mainFooter{
+    height: 250px;
+    background-image: url(../Images/Banners/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.innerFooter{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.footers:nth-child(5){
+    grid-column: 1/5;
+    background-color: rgba(99, 100, 100, 0.26);
+    color: white;
+    text-align: center;
+}
+#logoFooter{
+    margin-top: 10px;
+    border-radius: 50%;
+    height:145px;
+    width:145px;
+}
+#shopName{
+    font-family: cooper;
+    color: rgb(202, 200, 200);
+    text-shadow: 1px 1px 5px rgb(71, 71, 71);
+}
+.footerTitle{
+    margin-top: 25px;
+    margin-left: 30px;
+    font-family: verdana;
+    font-size: 18px;
+    color: gray;
+}
+.lists{
+    list-style: none;
+}
+.footerLink{
+    text-decoration: none;
+    color: rgb(44, 43, 43);
+    font-family: verdana;
+}
+
+
+/* responsiveness */
+@media screen and (min-width:320px){
+    .navbar{
+        height: 50px;
+    }
+    #logo{
+        height: 40px;
+        width: 40px;
+    }
+    #navbarContent{
+        background-image:linear-gradient(to bottom right, rgb(6, 206, 146),rgb(5, 151, 177)) ;
+        height: 280px;
+    }
+    #brand{
+        font-size: 15px;
+    }
+    #offcanvasCart{
+        width: 200px;
+        margin-top:50px;
+        padding: 10px;
+    }
+    .placeOrder{
+        display: grid;
+        grid-template-columns:1fr;
+        margin-top: 350px;
+    }
+    #checkOutBtn{
+        color: white;
+        background-image:linear-gradient(to bottom right, rgb(6, 206, 146),rgb(5, 151, 177)) ;
+        border-radius:5px;
+        border:none;
+        height: 35px;
+        width: 90%;
+        margin-left: 10px;
+    }
+    .carousel-inner{
+        height: 200px;
+    }
+    .carousel-item > img{
+        height: 200px;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .grids{
+        width: 250px;
+        height: 410px;
+    }
+    .grids1{
+        width: 250px;
+        height: 350px;
+    }
+    .footers:nth-child(1),
+    .footers:nth-child(2),
+    .footers:nth-child(3),
+    .footers:nth-child(4){
+        display: none;
+    }
+
+    .footers:nth-child(5){
+        background: none;
+        color:black;
+    }
+    .mainFooter{
+        height: 50px;
+    }
+    
+}
+@media screen and (min-width:540px){
+    .navbar{
+        height: 50px;
+    }
+    #logo{
+        height: 40px;
+        width: 40px;
+    }
+    #navbarContent{
+        background-image:linear-gradient(to bottom right, rgb(6, 206, 146),rgb(5, 151, 177)) ;
+        height: 280px;
+    }
+    #brand{
+        font-size: 15px;
+    }
+    #menuBtn{
+        margin-left: 250px;
+    }
+    #offcanvasCart{
+        width: 200px;
+        margin-top:50px;
+        padding: 10px;
+    }
+    .placeOrder{
+        display: grid;
+        grid-template-columns:1fr;
+        margin-top: 350px;
+    }
+    #checkOutBtn{
+        color: white;
+        background-image:linear-gradient(to bottom right, rgb(6, 206, 146),rgb(5, 151, 177)) ;
+        border-radius:5px;
+        border:none;
+        height: 35px;
+        width: 90%;
+        margin-left: 10px;
+    }
+    .carousel-inner{
+        height: 200px;
+    }
+    .carousel-item > img{
+        height: 200px;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .grids{
+        width: 250px;
+        height: 410px;
+    }
+    .grids1{
+        width: 250px;
+        height: 350px;
+    }
+    .footers:nth-child(1),
+    .footers:nth-child(2),
+    .footers:nth-child(3),
+    .footers:nth-child(4){
+        display: none;
+    }
+
+    .footers:nth-child(5){
+        background: none;
+        color:black;
+    }
+    .mainFooter{
+        height: 50px;
+    }
+    
+}
+
+@media screen and (min-width:850px){
+    .navbar{
+        height: 50px;
+    }
+    #logo{
+        height: 40px;
+        width: 40px;
+    }
+    #navbarContent{
+        background-image:linear-gradient(to bottom right, rgb(6, 206, 146),rgb(5, 151, 177)) ;
+        height: 280px;
+    }
+    #brand{
+        font-size: 15px;
+    }
+    #menuBtn{
+        margin-left: 500px;
+    }
+    #offcanvasCart{
+        width: 200px;
+        margin-top:50px;
+        padding: 10px;
+    }
+    .placeOrder{
+        display: grid;
+        grid-template-columns:1fr;
+        margin-top: 350px;
+    }
+    #checkOutBtn{
+        color: white;
+        background-image:linear-gradient(to bottom right, rgb(6, 206, 146),rgb(5, 151, 177)) ;
+        border-radius:5px;
+        border:none;
+        height: 35px;
+        width: 90%;
+        margin-left: 10px;
+    }
+    .carousel-inner{
+        height: 200px;
+    }
+    .carousel-item > img{
+        height: 200px;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .grids{
+        width: 250px;
+        height: 410px;
+    }
+    .grids1{
+        width: 250px;
+        height: 350px;
+    }
+    .footers:nth-child(1),
+    .footers:nth-child(2),
+    .footers:nth-child(3),
+    .footers:nth-child(4){
+        display: none;
+    }
+
+    .footers:nth-child(5){
+        background: none;
+        color:black;
+    }
+    .mainFooter{
+        height: 50px;
+    }
+    
+}
+
+@media screen and (min-width:992px){
+    .navbar{
+        height: 50px;
+    }
+    #logo{
+        height: 40px;
+        width: 40px;
+    }
+    #navbarContent{
+        background:none;
+        height: 280px;
+    }
+    #brand{
+        font-size: 15px;
+    }
+    #menuBtn{
+        margin-left: 250px;
+    }
+    #offcanvasCart{
+        width: 350px;
+        margin-top:50px;
+        padding: 10px;
+    }
+    .placeOrder{
+        display: grid;
+        grid-template-columns:1fr;
+        margin-top: 350px;
+    }
+    #checkOutBtn{
+        color: white;
+        background-image:linear-gradient(to bottom right, rgb(6, 206, 146),rgb(5, 151, 177)) ;
+        border-radius:5px;
+        border:none;
+        height: 35px;
+        width: 90%;
+        margin-left: 10px;
+    }
+    .carousel-inner{
+        height: 400px;
+    }
+    .carousel-item > img{
+        height: 400px;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .grids{
+        width: 250px;
+        height: 410px;
+    }
+    .grids1{
+        width: 250px;
+        height: 350px;
+    }
+    /* footer */
+    .footerImage{
+        width: 100%;
+        height: 100%;
+    }
+    .mainFooter{
+        height: 250px;
+        background-image: url(../Images/Banners/footer.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .innerFooter{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+    .footers:nth-child(1),
+    .footers:nth-child(2),
+    .footers:nth-child(3),
+    .footers:nth-child(4){
+        display: block;
+    }
+    .footers:nth-child(5){  
+    grid-column: 1/5;
+    background-color: rgba(99, 100, 100, 0.26);
+    color: white;
+    text-align: center;
+    }
+    #logoFooter{
+        margin-top: 10px;
+        border-radius: 50%;
+        height:145px;
+        width:145px;
+    }
+    #shopName{
+        font-family: cooper;
+        color: rgb(202, 200, 200);
+        text-shadow: 1px 1px 5px rgb(71, 71, 71);
+    }
+    .footerTitle{
+        margin-top: 25px;
+        margin-left: 30px;
+        font-family: verdana;
+        font-size: 18px;
+        color: gray;
+    }
+    .lists{
+        list-style: none;
+    }
+    .footerLink{
+        text-decoration: none;
+        color: rgb(44, 43, 43);
+        font-family: verdana;
+    }
+
+    
+}
